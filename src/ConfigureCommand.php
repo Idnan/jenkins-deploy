@@ -32,7 +32,7 @@ class ConfigureCommand extends Command
         if (!$jenkinsUrl = $this->askQuestion("URL: ")) $this->abort();
 
         // ask for jenkins token
-        if (!$jenkinsToken = $this->askQuestion("Token: ")) $this->abort();
+        if (!$jenkinsToken = $this->askQuestion("Token (Profile > Configure > Add New Token): ")) $this->abort();
 
         // ask for jenkins username
         if (!$jenkinsUsername = $this->askQuestion("Username: ")) $this->abort();
