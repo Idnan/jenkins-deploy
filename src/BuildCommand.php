@@ -18,7 +18,7 @@ class BuildCommand extends Command
     public function configure()
     {
         $this->setName("build")
-             ->setDescription("Trigger a new build")
+             ->setDescription("Trigger a build")
              ->addArgument("job", InputArgument::REQUIRED, "Job name")
              ->addOption("wait", "w", InputOption::VALUE_NONE, "Wait until the completion/abortion of the command")
              ->addOption("params", "p", InputOption::VALUE_OPTIONAL, "Specify the build parameters in the key=value format");
